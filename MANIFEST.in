@@ -1,0 +1,4 @@
+include README.md README.zh-CN.md CITATION.cff LICENSE.md NOTICE.md
+recursive-include licenses *.md *.txt
+recursive-include docs *.md *.json
+recursive-include tests *.py

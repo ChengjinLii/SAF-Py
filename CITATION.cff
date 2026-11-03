@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "Please cite the original SAF paper and acknowledge Shastin's original code; this is an unofficial Python port."
+title: "SAF-Py: Unofficial Python Port of the SAF Framework"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Li
+    given-names: Chengjin
+repository-code: "https://github.com/ChengjinLii/SAF-Py"
+license:
+  - MIT
+  - BSD-3-Clause
+preferred-citation:
+  type: article
+  title: "Surface-based tracking for short association fibre tractography"
+  authors:
+    - family-names: Shastin
+      given-names: Dmitri
+    - family-names: Genc
+      given-names: Sila
+    - family-names: Parker
+      given-names: Greg D.
+    - family-names: Koller
+      given-names: Kristin
+    - family-names: Tax
+      given-names: Chantal M. W.
+    - family-names: Evans
+      given-names: John
+    - family-names: Hamandi
+      given-names: Khalid
+    - family-names: Gray
+      given-names: William P.
+    - family-names: Jones
+      given-names: Derek K.
+    - family-names: Chamberland
+      given-names: Maxime
+  journal: NeuroImage
+  volume: 260
+  start: 119423
+  year: 2022
+  doi: "10.1016/j.neuroimage.2022.119423"
