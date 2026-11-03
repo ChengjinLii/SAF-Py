@@ -90,3 +90,23 @@ reach a POSIX shell. Do not expose them as untrusted web-service parameters.
 No checksum-based resume, anatomical validation, true-FOD generation validation,
 or automatic input repair is claimed. Native Windows command handling is
 unit-tested only. See [VALIDATION.md](VALIDATION.md) for tested boundaries.
+
+## Interpreting Results
+
+Outputs are surface-constrained SAF tractography candidates. Their interpretation
+as U-fibres or connections between adjacent gyri requires anatomical review.
+Soft GWG retains outer crossings and does not require every interior point to
+remain in white matter. The inherited 90 mm length default is a configurable
+filter, not a universal anatomical definition of a short fibre. Record the
+length, seeding and filtering options used in each study.
+
+Hard-split tracks inherit their source weights; these are not newly estimated
+SIFT2 weights. Pin software versions and use `-nthreads 0` for controlled
+single-threaded MRtrix tracking. A fixed RNG seed alone does not make
+multi-threaded tracking bit-reproducible. The clustering differences documented
+above also preclude a claim of whole-pipeline MATLAB equivalence.
+
+SAF-Py is research software. Automated QC checks track count, finite coordinates,
+physical length and VTK export; anatomical validity and clinical suitability
+require separate evaluation. The tested computational scope is recorded in
+[VALIDATION.md](VALIDATION.md).
